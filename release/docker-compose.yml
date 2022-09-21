@@ -36,7 +36,7 @@ services:
     environment:
       - JAVA_OPTS=-Xmx3500m
       - MONGODB_URI=mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@mongodb:27017/admin
-      - MINIO_URL=http://172.31.0.1:9000
+      - MINIO_URL=http://minio:9000
       - MINIO_ACCESS_KEY=${MINIO_ACCESS_KEY}
       - MINIO_SECRET_KEY=${MINIO_SECRET_KEY}
       - RABBITMQ_HOST=rabbitmq
